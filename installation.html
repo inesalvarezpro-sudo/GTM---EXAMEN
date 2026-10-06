@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!-- Pas de GTM automatique sur cette page : à installer à la main (partie 1) -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation | Kop Store</title>
+<meta name="description" content="Page à équiper de Google Tag Manager à la main">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="shop.js" defer></script>
+</head>
+
+<body data-page="installation">
+
+<div class="topbar">Site d'examen Google Tag Manager — <strong>aucune commande réelle</strong> · Livraison offerte dès 60 € (pour de faux)</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+        <a href="hello.html">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="produit.html">Maillot 2026</a>
+        <a href="contact.html">Contact</a>
+        <a href="examen.html">Sujet d'examen</a>
+    </nav>
+    <div class="header-actions">
+      <a href="panier.html" class="cart-link" id="header-cart">Panier <span class="cart-count" data-count="0">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap exo-page">
+  <div class="exo-header"><span class="eyebrow">Partie 1 de l'examen</span><h1>Page d'installation</h1>
+    <p class="lead">Cette page ne charge pas <code>gtm-install.js</code> : Google Tag Manager n'y est pas installé. À vous de l'installer à la main, avec les deux codes officiels fournis par GTM.</p></div>
+  <div class="exo">
+    <h2>Comment savoir si c'est réussi ?</h2>
+    <ul class="check-list">
+      <li>En mode Aperçu, Tag Assistant se connecte à cette page.</li>
+      <li>La balise Google se déclenche ici, comme sur les autres pages.</li>
+      <li>Dans le panneau <strong>{ } dataLayer</strong>, l'événement <code>gtm.js</code> apparaît.</li>
+    </ul>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+        <p>Boutique fictive créée pour apprendre Google Tag Manager et GA4. Tout fonctionne comme sur un vrai site… sauf le paiement.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="boutique.html">Tous les produits</a>
+        <a href="produit.html">Maillot domicile 2026</a>
+        <a href="panier.html">Mon panier</a>
+      </div>
+      <div>
+        <h4>Examen</h4>
+        <a href="examen.html">Sujet d'examen</a>
+        <a href="installation.html">Page d'installation</a>
+        <a href="contact.html">Nous contacter</a>
+        <a href="catalogue-kopstore-2026.pdf" class="catalogue-link" target="_blank" rel="noopener">Catalogue 2026 (PDF)</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Adresse e-mail</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="votre@email.fr" required>
+          <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+        <h4 style="margin-top:18px">Suivez-nous</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-link" data-network="instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/" class="social-link" data-network="facebook" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/" class="social-link" data-network="tiktok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© Kop Store — site pédagogique, aucune vente réelle.</span>
+      <a href="#" data-reset-shop>Réinitialiser la boutique (panier, favoris, commande)</a>
+    </div>
+  </div>
+</footer>
+
+<script src="mes-tags.js"></script>
+</body>
+</html>

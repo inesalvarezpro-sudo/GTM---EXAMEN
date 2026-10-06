@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager : chargé par gtm-install.js (ID à renseigner dans ce fichier) -->
+<script src="gtm-install.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kop Store | Accueil</title>
+<meta name="description" content="Boutique d'examen Google Tag Manager">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="shop.js" defer></script>
+</head>
+
+<body data-page="home">
+
+<div class="topbar">Site d'examen Google Tag Manager — <strong>aucune commande réelle</strong> · Livraison offerte dès 60 € (pour de faux)</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+        <a href="hello.html" class="active">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="produit.html">Maillot 2026</a>
+        <a href="contact.html">Contact</a>
+        <a href="examen.html">Sujet d'examen</a>
+    </nav>
+    <div class="header-actions">
+      <a href="panier.html" class="cart-link" id="header-cart">Panier <span class="cart-count" data-count="0">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Nouvelle saison 2026-2027</span>
+      <h1>Rouge. Noir.<br><em>Kop.</em></h1>
+      <p>Le nouveau maillot domicile est arrivé. Flocage personnalisé, livraison en 24 h et tout le virage en boutique.</p>
+      <div class="hero-actions">
+        <a href="produit.html" class="btn btn-primary" id="hero-cta">Découvrir le maillot</a>
+        <a href="boutique.html" class="btn btn-outline">Voir la boutique</a>
+      </div>
+    </div>
+    <div class="hero-visual"><img src="img/maillot-domicile.jpg" alt="Maillot domicile rouge et noir"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="usp">
+      <div><strong>Livraison offerte</strong>dès 60 € d'achat</div>
+      <div><strong>Flocage personnalisé</strong>nom et numéro, 15 €</div>
+      <div><strong>Retours 30 jours</strong>échange de taille gratuit</div>
+      <div><strong>Paiement sécurisé</strong>CB, PayPal, Apple Pay</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Les plus vendus</span><h2>Au virage cette saison</h2></div>
+      <a href="boutique.html">Tout voir →</a>
+    </div>
+    <div class="product-grid" id="home-bestsellers"></div>
+  </div>
+</section>
+
+<section class="section training" id="examen">
+  <div class="wrap">
+    <span class="eyebrow">Examen Google Tag Manager · GA4</span>
+    <h2>Votre mission du jour</h2>
+    <p class="lead">Installez le suivi complet de cette boutique : GA4, éléments clés du site, e-commerce et fonctionnalités avancées.</p>
+    <div class="training-grid">
+      <div class="training-card"><span class="pill pill-red">Sujet</span><h3><a href="examen.html">Sujet d'examen</a></h3><p>Les 4 parties, le planning et le barème.</p></div>
+      <div class="training-card"><span class="pill pill-soft">Partie 1</span><h3><a href="installation.html">Page d'installation</a></h3><p>La page sans GTM, à équiper à la main.</p></div>
+      <div class="training-card"><span class="pill pill-soft">Partie 2</span><h3><a href="contact.html">Contact</a></h3><p>Téléphone, e-mail et formulaire.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+        <p>Boutique fictive créée pour apprendre Google Tag Manager et GA4. Tout fonctionne comme sur un vrai site… sauf le paiement.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="boutique.html">Tous les produits</a>
+        <a href="produit.html">Maillot domicile 2026</a>
+        <a href="panier.html">Mon panier</a>
+      </div>
+      <div>
+        <h4>Examen</h4>
+        <a href="examen.html">Sujet d'examen</a>
+        <a href="installation.html">Page d'installation</a>
+        <a href="contact.html">Nous contacter</a>
+        <a href="catalogue-kopstore-2026.pdf" class="catalogue-link" target="_blank" rel="noopener">Catalogue 2026 (PDF)</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Adresse e-mail</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="votre@email.fr" required>
+          <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+        <h4 style="margin-top:18px">Suivez-nous</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-link" data-network="instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/" class="social-link" data-network="facebook" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/" class="social-link" data-network="tiktok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© Kop Store — site pédagogique, aucune vente réelle.</span>
+      <a href="#" data-reset-shop>Réinitialiser la boutique (panier, favoris, commande)</a>
+    </div>
+  </div>
+</footer>
+
+<script src="mes-tags.js"></script>
+</body>
+</html>

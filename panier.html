@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager : chargé par gtm-install.js (ID à renseigner dans ce fichier) -->
+<script src="gtm-install.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mon panier | Kop Store</title>
+<meta name="description" content="Votre panier Kop Store">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="shop.js" defer></script>
+</head>
+
+<body data-page="cart">
+
+<div class="topbar">Site d'examen Google Tag Manager — <strong>aucune commande réelle</strong> · Livraison offerte dès 60 € (pour de faux)</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+        <a href="hello.html">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="produit.html">Maillot 2026</a>
+        <a href="contact.html">Contact</a>
+        <a href="examen.html">Sujet d'examen</a>
+    </nav>
+    <div class="header-actions">
+      <a href="panier.html" class="cart-link" id="header-cart">Panier <span class="cart-count" data-count="0">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="hello.html">Accueil</a><span>/</span>Panier</nav>
+  <ol class="steps" id="steps"><li class="current">Panier</li><li>Livraison</li><li>Paiement</li><li>Confirmation</li></ol>
+  <h1 style="margin-bottom:22px">Mon panier</h1>
+  <div class="cart-layout" id="cart-layout">
+    <div id="cart-lines"></div>
+    <aside class="summary">
+      <h2>Récapitulatif</h2>
+      <div id="free-ship"></div>
+      <div class="row"><span>Sous-total</span><span id="summary-subtotal">0,00 €</span></div>
+      <div class="row discount" id="summary-discount-row" hidden><span>Réduction <span id="summary-coupon-code"></span></span><span id="summary-discount"></span></div>
+      <div class="row"><span>Livraison standard</span><span id="summary-shipping">—</span></div>
+      <div class="row total"><span>Total TTC</span><span id="summary-total">0,00 €</span></div>
+      <form class="coupon" id="coupon-form">
+        <label for="coupon-input" class="visually-hidden">Code promo</label>
+        <input type="text" id="coupon-input" placeholder="Code promo">
+        <button type="submit" class="btn btn-outline btn-small" id="coupon-apply">Appliquer</button>
+      </form>
+      <p class="coupon-msg" id="coupon-msg" aria-live="polite"></p>
+      <a href="commande.html" class="btn btn-primary btn-block" id="checkout-btn">Passer la commande</a>
+      <p class="note" style="margin:12px 0 0;text-align:center">Codes de test : <code>GTM10</code> ou <code>ROUGE5</code></p>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+        <p>Boutique fictive créée pour apprendre Google Tag Manager et GA4. Tout fonctionne comme sur un vrai site… sauf le paiement.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="boutique.html">Tous les produits</a>
+        <a href="produit.html">Maillot domicile 2026</a>
+        <a href="panier.html">Mon panier</a>
+      </div>
+      <div>
+        <h4>Examen</h4>
+        <a href="examen.html">Sujet d'examen</a>
+        <a href="installation.html">Page d'installation</a>
+        <a href="contact.html">Nous contacter</a>
+        <a href="catalogue-kopstore-2026.pdf" class="catalogue-link" target="_blank" rel="noopener">Catalogue 2026 (PDF)</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Adresse e-mail</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="votre@email.fr" required>
+          <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+        <h4 style="margin-top:18px">Suivez-nous</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-link" data-network="instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/" class="social-link" data-network="facebook" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/" class="social-link" data-network="tiktok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© Kop Store — site pédagogique, aucune vente réelle.</span>
+      <a href="#" data-reset-shop>Réinitialiser la boutique (panier, favoris, commande)</a>
+    </div>
+  </div>
+</footer>
+
+<script src="mes-tags.js"></script>
+</body>
+</html>

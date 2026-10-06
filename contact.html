@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager : chargé par gtm-install.js (ID à renseigner dans ce fichier) -->
+<script src="gtm-install.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Kop Store</title>
+<meta name="description" content="Contacter le service client Kop Store">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="shop.js" defer></script>
+</head>
+
+<body data-page="contact">
+
+<div class="topbar">Site d'examen Google Tag Manager — <strong>aucune commande réelle</strong> · Livraison offerte dès 60 € (pour de faux)</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+        <a href="hello.html">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="produit.html">Maillot 2026</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="examen.html">Sujet d'examen</a>
+    </nav>
+    <div class="header-actions">
+      <a href="panier.html" class="cart-link" id="header-cart">Panier <span class="cart-count" data-count="0">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap exo-page">
+  <div class="exo-header"><span class="eyebrow">Service client</span><h1>Nous contacter</h1>
+    <p class="lead">Une question sur une commande, une taille ou un retour ? Notre équipe répond du lundi au vendredi, de 9 h à 18 h.</p></div>
+  <div class="contact-grid">
+    <div class="exo">
+      <h2>Par téléphone ou e-mail</h2>
+      <p class="contact-line"><span class="contact-label">Téléphone</span><a href="tel:+33123456789" id="contact-phone">01 23 45 67 89</a></p>
+      <p class="contact-line"><span class="contact-label">E-mail</span><a href="mailto:contact@kopstore.example" id="contact-email">contact@kopstore.example</a></p>
+      <p class="note">Coordonnées fictives : site d'examen, aucun appel ni e-mail ne sera traité.</p>
+    </div>
+    <div class="exo">
+      <h2>Par formulaire</h2>
+      <form id="contact-form" class="contact-form" action="contact-merci.html" method="get">
+        <div class="form-row"><label for="contact-nom">Nom *</label><input type="text" id="contact-nom" required></div>
+        <div class="form-row"><label for="contact-mail">E-mail *</label><input type="email" id="contact-mail" required></div>
+        <div class="form-row"><label for="contact-sujet">Sujet *</label>
+          <select id="contact-sujet" name="sujet" required>
+            <option value="">Choisissez un sujet</option>
+            <option value="commande">Ma commande</option>
+            <option value="taille">Une question de taille</option>
+            <option value="retour">Un retour ou un échange</option>
+            <option value="autre">Autre</option>
+          </select></div>
+        <div class="form-row"><label for="contact-message">Message *</label><textarea id="contact-message" rows="5" required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Envoyer le message</button>
+        <p class="note" style="margin:10px 0 0">Formulaire fictif : n'indiquez pas vos vraies coordonnées.</p>
+      </form>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="hello.html" class="logo"><span class="logo-mark"></span>Kop Store</a>
+        <p>Boutique fictive créée pour apprendre Google Tag Manager et GA4. Tout fonctionne comme sur un vrai site… sauf le paiement.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="boutique.html">Tous les produits</a>
+        <a href="produit.html">Maillot domicile 2026</a>
+        <a href="panier.html">Mon panier</a>
+      </div>
+      <div>
+        <h4>Examen</h4>
+        <a href="examen.html">Sujet d'examen</a>
+        <a href="installation.html">Page d'installation</a>
+        <a href="contact.html">Nous contacter</a>
+        <a href="catalogue-kopstore-2026.pdf" class="catalogue-link" target="_blank" rel="noopener">Catalogue 2026 (PDF)</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Adresse e-mail</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="votre@email.fr" required>
+          <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+        <h4 style="margin-top:18px">Suivez-nous</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-link" data-network="instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/" class="social-link" data-network="facebook" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/" class="social-link" data-network="tiktok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© Kop Store — site pédagogique, aucune vente réelle.</span>
+      <a href="#" data-reset-shop>Réinitialiser la boutique (panier, favoris, commande)</a>
+    </div>
+  </div>
+</footer>
+
+<script src="mes-tags.js"></script>
+</body>
+</html>

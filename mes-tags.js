@@ -1,4 +1,5 @@
 window.dataLayer = window.dataLayer || [];
+window.shopHooks = window.shopHooks || {};
 
 // Transforme un produit en format GA4
 function versItem(p) {
@@ -165,14 +166,10 @@ shopHooks.addToWishlist = function (data) {
   var item = versItem(data.product);
   if (data.size) item.item_variant = data.size;
 
-  dataLayer.push({ ecommerce: null });
-  dataLayer.push({
-    event: "add_to_wishlist",
-    ecommerce: {
-      currency: "EUR",
-      value: Number(data.product.price),
-      items: [item]
-    }
+  envoyer("add_to_wishlist", {
+    currency: "EUR",
+    value: Number(data.product.price),
+    items: [item]
   });
 };
 
